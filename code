@@ -1,0 +1,103 @@
+import math
+print ("Hello Welcome to the GirlBoss Calculator")
+print("Here is a list of Functions I can do")
+print("Add,Sub,Multiply,Divide,Power,Trig,Log,Square Root,Factorial)
+type = input("What is your math problem? ")
+
+if type == "Add":
+    x = input ("What is the first number?")
+    x = float(x)
+    y = input ("What is the second number?")
+    y = float (y)
+    print (x+y)
+elif type == "Sub":
+    x = input ("What is the first number?")
+    x = float(x)
+    y = input ("What is the second number?")
+    y = float (y)
+    print (x-y)
+elif type == "Multiply":
+    x = input ("What is the first number?")
+    x = float(x)
+    y = input ("What is the second number?")
+    y = float (y)
+    print (x*y)
+elif type == "Divide":
+    x = input ("What is the first number?")
+    x = float(x)
+    y = input ("What is the second number?")
+    y = float (y)
+    print (x/y)
+elif type == "Power":
+    base = input ("What is the base of the Power Function? ")
+    expo = input ("What is the expontial of the Power Function? ")
+    base = float(base)
+    expo = float(expo)
+    out = pow(base,expo)
+    print(out)
+elif type == "Trig":
+    a = input("Which Trig Function are you using? Sin,Cos,Tan? ")
+    if a == "Sin":
+        x = input ("What number would you like to put into Sin? ")
+        x = float(x)
+        x = math.radians(x)
+        print(math.sin(x))
+    elif a == "Cos":
+        x = input ("What number would you like to put into Cos? ")
+        x = float(x)
+        x = math.radians(x)
+        print(math.cos(x))      
+    elif a == "Tan":
+        x = input ("What number would you like to put into Tan? ")
+        x = float(x)
+        x = math.radians(x)
+        print(math.Tan(x))
+    else:
+        print("Hi have not properly selected a Trig Function please try again")
+elif type == "Log":
+    base = input ("What is the base number for the log? ")
+    x = input ("What is the number you are putting into the log? ")
+    base = float(base)
+    x = float(x)
+    print(math.log(x,base))
+elif type == "Square Root":
+    x = input ("What number would you like to square? ")
+    x = float(x)
+    print(math.sqrt(x)) 
+elif type == "Factorial":
+    x = input ("What number would like to find the Factorial of? ")
+    x = float(x)
+    print(math.factorial(x))
+else:
+    print("You have not properly selected a function please try again")
+print("Thank you for using the GirlBoss Calculator")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+This polynomal code will allow you to fin the root solver for any quadric formula 
+the program first asks you to enter your three inputs in order from x^2+bx+c
+it saves the inputs as a,b,c 
+once that is done it then divids your b/a and saves it as "d" then c/a then saves it as "e"
+ after that is it uses another two codes 
+ (-d + square root (d^2-4E))/2 and saves it for F
+ (-d - square root (d^2-4E))/2 and saves it for F
+ later f is made negative and saved as h 
+ g is also made negative and saved as i
+ after the a(x+b)(x+c) is used to give out the final outputs as A,B,C
+ 
+ 
